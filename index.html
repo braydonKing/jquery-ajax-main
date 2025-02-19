@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+  </head>
+  <body>
+
+    <div id="container">
+        <h1>Practice with jQuery & AJAX</h1>
+
+        <section id="tokens">
+            <h2>Get a token</h2>
+            <p>In script.js, write a 'click' event handler for the button below that:
+                <ul>
+                    <li>Calls a function called getToken</li>
+                    <li>Queries the <a href="https://opentdb.com/api_config.php" target="_blank">Open Trivia Database</a> for a token using jQuery/AJAX</li>
+                    <li>Assigns the token value to the variable <em>token</em></li>
+                    <li>Displays the value for token in <pre><code>&#x3C;div id=&#x22;tokenValue&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre> below</li>
+
+                </ul>
+
+            </p>
+
+            <div><button id="getToken" class="button">Get Token</button></div>
+            <div id="tokenValue" class="output"></div>
+        </section>
+
+
+
+        <section id="getQuestion">
+            <h2>Get a sports question and answer</h2>
+            <p>In script.js, write a 'click' event handler for the button below that:
+                <ul>
+                    <li>Calls a function called getSportsQ()</li>
+                    <li>Queries the <a href="https://opentdb.com/api_config.php" target="_blank">Open Trivia Database</a> for a single question in the category of sports using jQuery/AJAX</li>
+                    <li>The question should be multiple choice, difficulty level of easy, with default encoding.</li>
+                    <li>Display the question in the div with id <em>sportsQ</em> and correct answer in the div with id <em>sportsA</em></li>
+
+                </ul>
+
+            </p>
+
+            <div><button id="getSportsQ" class="button">Get sports question</button></div>
+            <div id="sportsQ" class="output"></div>
+            <div id="sportsA" class="output"></div>
+
+        </section>
+
+        <section id="displayQuestionAnswers">
+            <h2>Get a history question, display question and possible answers as radio buttons</h2>
+            <p>In script.js, write a 'click' event handler for the button below that:
+                <ul>
+                    <li>Calls a function called getHisotryQ()</li>
+                    <li>Queries the <a href="https://opentdb.com/api_config.php" target="_blank">Open Trivia Database</a> for a single question in the category of history using jQuery/AJAX</li>
+                    <li>The question should be multiple choice, difficulty level of medium, with default encoding.</li>
+                    <li>Display the question in the div with id <em>historyQ</em>. Create radio buttons for each possible answer in the div with id <em>historyA</em></li>
+                    <li>Sample radio button format:</li>
+                    &#x3C;div&#x3E;&#x3C;input type=&#x22;radio&#x22; name=&#x22;qa&#x22; value=&#x22;correct&#x22;&#x3E; Answer 1 &#x3C;/div&#x3E;<br>
+                    &#x3C;div&#x3E;&#x3C;input type=&#x22;radio&#x22; name=&#x22;qa&#x22; value=&#x22;incorrect&#x22;&#x3E; Answer 2&#x3C;/div&#x3E;
+                </ul>
+
+            </p>
+
+            <div><button id="getHistoryQ" class="button">Get history question</button></div>
+            <div id="historyQ" class="output"></div>
+            <div id="historyA" class="output"></div>
+
+        </section>
+
+
+
+
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+    <script src="js/script.js" ></script>
+
+
+</body>
+</html>
