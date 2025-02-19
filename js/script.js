@@ -44,6 +44,7 @@ function myFunction(){
 /* Write event handler and function for getting the token here */
 $("#getToken").click(getToken);
 
+
 function getToken(){
     console.log("I'm get token")
     $.ajax({
